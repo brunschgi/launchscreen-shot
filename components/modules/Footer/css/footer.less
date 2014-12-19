@@ -1,0 +1,38 @@
+.g-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 0 @gap;
+
+	.footer-tile {
+		width: percentage(1/8);
+	}
+
+	.footer-tile-image {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: @bp-xs-min) {
+	.g-footer {
+		.footer-tile-image {
+			width: 60%;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-md-min) {
+	.g-footer {
+		.footer-tile-image {
+			width: 40%;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-lg-min) {
+	.g-footer {
+		.footer-tile-image {
+			width: 30%;
+		}
+	}
+}

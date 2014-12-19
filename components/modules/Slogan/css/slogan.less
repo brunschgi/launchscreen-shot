@@ -1,0 +1,79 @@
+.g-slogan {
+	position: absolute;
+	padding: 0 @gap;
+	width: 100%;
+	top: 30%;
+
+	.slogan-heading, .slogan-subheading {
+		font-size: 2*@gap;
+		line-height: 1.05em;
+	}
+
+	.slogan-heading {
+		font-family: ubs-headline-w01;
+		color: @black;
+	}
+
+	.slogan-separator {
+		display: block;
+	}
+
+	.slogan-subheading {
+		margin-top: 5px;
+		font-family: ubs-headline-w01-italic;
+		color: @red;
+	}
+}
+
+@media screen and (min-width: @bp-xs-2) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 5*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-sm-min) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 4*@gap;
+		}
+
+		.slogan-separator {
+			display: inline;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-md-min) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 5*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-lg-min) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 6*@gap;
+		}
+	}
+}
+
+
+@media screen and (min-width: @bp-xl-min) and (orientation: portrait) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 6*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-xl-min) and (orientation: landscape) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 8*@gap;
+		}
+	}
+}

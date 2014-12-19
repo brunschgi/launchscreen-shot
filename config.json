@@ -1,0 +1,33 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "shots": [
+    {
+      "url": "http://127.0.0.1:3000/launch",
+      "options": {
+        "quality": 100,
+        "phantomPath": "/usr/bin/phantomjs"
+      },
+      "files": [
+        {
+          "name": "test",
+          "width": 640,
+          "height": 960,
+          "factor" : 2
+        }
+      ]
+    }
+  ],
+  "micro": {
+    "components": {
+      "module": {
+        "path": "components/modules"
+      }
+    },
+    "view_file_extension": "html",
+    "view_directory": "views",
+    "view_partials_directory": "views/_partials"
+  }
+}

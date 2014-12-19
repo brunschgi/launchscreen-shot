@@ -1,0 +1,29 @@
+{
+  "name": "launchscreen-shot",
+  "version": "0.0.1",
+  "authors": [
+    "Remo Brunschwiler <remo.brunschwiler@namics.com>"
+  ],
+  "description": "Make screenshots to use for mobile device launch screens",
+  "keywords": [
+    "terrific",
+    "micro",
+    "terrifically",
+	"launchscreen"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/deniaz/terrific-node",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "terrificjs": "~2.1.0"
+  }
+}

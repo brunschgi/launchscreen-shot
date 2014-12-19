@@ -1,0 +1,54 @@
+@gutter: 0px;
+
+/* Utilities & Special Grid */
+@media all {
+	/* Utilities */
+	*,
+	*:before,
+	*:after {
+		.box-sizing(border-box);
+	}
+
+	.clearfix {
+		*zoom: 1;
+	}
+
+	.clearfix:before,
+	.clearfix:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	.clearfix:after {
+		clear: both;
+	}
+
+	/* Special Grid */
+	.row-justify {
+		text-align: justify;
+		font-size: 0;
+		margin-left: -@gutter;
+	}
+
+	.col-justify {
+		font-size: 1rem;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		padding-left: @gutter;
+
+		&:after {
+			// force text align justify to work
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	.col-justify-extra {
+		display: inline-block;
+		border: 0;
+		margin: 0;
+	}
+}
