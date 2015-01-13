@@ -38,3 +38,4 @@ npm-debug.log
 # Project #####################
 !.gitkeep
 shots
+public/latest
