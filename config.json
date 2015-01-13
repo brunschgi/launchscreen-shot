@@ -12,10 +12,29 @@
       },
       "files": [
         {
-          "name": "test",
-          "width": 640,
-          "height": 960,
-          "factor" : 2
+          "name": "320x480",
+          "width": 320,
+          "height": 480
+        },
+        {
+          "name": "480x800",
+          "width": 480,
+          "height": 800
+        },
+        {
+          "name": "480x854",
+          "width": 480,
+          "height": 854
+        },
+        {
+          "name": "540x960",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "name": "800x1280",
+          "width": 800,
+          "height": 1280
         }
       ]
     }

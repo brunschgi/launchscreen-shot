@@ -66,7 +66,6 @@ gulp.task('webshot', function() {
 
 		for(var j = 0, lenj = files.length; j < lenj; j++) {
 			var file = files[j];
-			var factor = file.factor || 1;
 
 			// portrait mode
 			var portrait = {
