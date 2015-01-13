@@ -25,27 +25,24 @@
 	}
 }
 
-@media screen and (min-width: @bp-xs-2) {
+/* Portrait */
+@media screen and (min-width: @bp-xs-min) and (orientation: portrait) {
 	.g-slogan {
 		.slogan-heading, .slogan-subheading {
-			font-size: 5*@gap;
+			font-size: 3*@gap;
 		}
 	}
 }
 
-@media screen and (min-width: @bp-sm-min) {
+@media screen and (min-width: @bp-xs-2) and (orientation: portrait) {
 	.g-slogan {
 		.slogan-heading, .slogan-subheading {
 			font-size: 4*@gap;
 		}
-
-		.slogan-separator {
-			display: inline;
-		}
 	}
 }
 
-@media screen and (min-width: @bp-md-min) {
+@media screen and (min-width: @bp-md-min) and (orientation: portrait) {
 	.g-slogan {
 		.slogan-heading, .slogan-subheading {
 			font-size: 5*@gap;
@@ -53,7 +50,7 @@
 	}
 }
 
-@media screen and (min-width: @bp-lg-min) {
+@media screen and (min-width: @bp-lg-min) and (orientation: portrait) {
 	.g-slogan {
 		.slogan-heading, .slogan-subheading {
 			font-size: 6*@gap;
@@ -62,7 +59,32 @@
 }
 
 
-@media screen and (min-width: @bp-xl-min) and (orientation: portrait) {
+/* Landscape */
+@media screen and (min-width: @bp-xs-min) and (orientation: landscape) {
+	.g-slogan {
+		.slogan-separator {
+			display: inline;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-sm-min) and (orientation: landscape) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 3*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-md-min) and (orientation: landscape) {
+	.g-slogan {
+		.slogan-heading, .slogan-subheading {
+			font-size: 4*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-lg-min) and (orientation: landscape) {
 	.g-slogan {
 		.slogan-heading, .slogan-subheading {
 			font-size: 6*@gap;

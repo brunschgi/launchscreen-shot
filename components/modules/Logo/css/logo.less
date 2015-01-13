@@ -5,25 +5,45 @@
 	padding: @gap @gap;
 }
 
-@media screen and (min-width: @bp-xs-2) {
+/* Portrait */
+@media screen and (min-width: @bp-xs-min) and (orientation: portrait) {
 	.e-logo {
-		height: 5*@gap;
+		height: 3*@gap;
 	}
 }
 
-@media screen and (min-width: @bp-sm-min) {
+@media screen and (min-width: @bp-xs-2) and (orientation: portrait) {
 	.e-logo {
 		height: 4*@gap;
 	}
 }
 
-@media screen and (min-width: @bp-md-min) {
+@media screen and (min-width: @bp-md-min) and (orientation: portrait) {
 	.e-logo {
 		height: 5*@gap;
 	}
 }
 
-@media screen and (min-width: @bp-lg-min) {
+@media screen and (min-width: @bp-lg-min) and (orientation: portrait) {
+	.e-logo {
+		height: 6*@gap;
+	}
+}
+
+/* Landscape */
+@media screen and (min-width: @bp-sm-min) and (orientation: landscape) {
+	.e-logo {
+		height: 3*@gap;
+	}
+}
+
+@media screen and (min-width: @bp-md-min) and (orientation: landscape) {
+	.e-logo {
+		height: 4*@gap;
+	}
+}
+
+@media screen and (min-width: @bp-lg-min) and (orientation: landscape) {
 	.e-logo {
 		height: 6*@gap;
 	}
