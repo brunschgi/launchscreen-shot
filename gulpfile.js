@@ -113,6 +113,16 @@ gulp.task('webshot', function() {
 	}
 });
 
+gulp.task('crush', function() {
+	gulp
+		.src('./shots/*.*')
+		.pipe(plumber())
+		.pipe(imagemin({
+			progressive: true
+		}))
+		.pipe(gulp.dest('./shots'));
+});
+
 
 gulp.task('watch', ['compile-css', 'compile-js'], function() {
     watch(
