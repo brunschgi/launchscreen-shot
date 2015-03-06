@@ -1,34 +1,42 @@
 .g-slogan {
 	position: absolute;
-	padding: 0 @gap;
+	padding: 0 20px;
 	width: 100%;
-	top: 30%;
-
-	.slogan-heading, .slogan-subheading {
-		font-size: 2*@gap;
-		line-height: 1.05em;
-	}
+	top: 34%;
 
 	.slogan-heading {
-		font-family: ubs-headline-w01;
+		font-size: 2*@gap;
+		line-height: 1.05em;
+		font-family: frutiger-light;
 		color: @black;
-	}
-
-	.slogan-separator {
-		display: block;
-	}
-
-	.slogan-subheading {
-		margin-top: 5px;
-		font-family: ubs-headline-w01-italic;
-		color: @red;
 	}
 }
 
+@media screen and (orientation: landscape) {
+	.g-slogan {
+		top: 30%;
+	}
+}
+
+@media screen and (min-width: @bp-md-2) {
+	.g-slogan {
+		padding: 0 40px;
+	}
+}
+
+
 /* Portrait */
+@media screen and (min-width: @bp-xss-2) and (orientation: portrait) {
+	.g-slogan {
+		.slogan-heading {
+			font-size: 2.5 * @gap;
+		}
+	}
+}
+
 @media screen and (min-width: @bp-xs-min) and (orientation: portrait) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 3*@gap;
 		}
 	}
@@ -36,7 +44,7 @@
 
 @media screen and (min-width: @bp-xs-2) and (orientation: portrait) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 4*@gap;
 		}
 	}
@@ -44,33 +52,33 @@
 
 @media screen and (min-width: @bp-md-min) and (orientation: portrait) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 5*@gap;
 		}
 	}
 }
 
-@media screen and (min-width: @bp-lg-min) and (orientation: portrait) {
+@media screen and (min-width: @bp-md-2) and (orientation: portrait) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 6*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-xl-min) and (orientation: portrait) {
+	.g-slogan {
+		.slogan-heading {
+			font-size: 8*@gap;
 		}
 	}
 }
 
 
 /* Landscape */
-@media screen and (min-width: @bp-xs-min) and (orientation: landscape) {
-	.g-slogan {
-		.slogan-separator {
-			display: inline;
-		}
-	}
-}
-
 @media screen and (min-width: @bp-sm-min) and (orientation: landscape) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 3*@gap;
 		}
 	}
@@ -78,7 +86,7 @@
 
 @media screen and (min-width: @bp-md-min) and (orientation: landscape) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
+		.slogan-heading {
 			font-size: 4*@gap;
 		}
 	}
@@ -86,8 +94,16 @@
 
 @media screen and (min-width: @bp-lg-min) and (orientation: landscape) {
 	.g-slogan {
-		.slogan-heading, .slogan-subheading {
-			font-size: 6*@gap;
+		.slogan-heading {
+			font-size: 5*@gap;
+		}
+	}
+}
+
+@media screen and (min-width: @bp-xl-2) and (orientation: landscape) {
+	.g-slogan {
+		.slogan-heading {
+			font-size: 7*@gap;
 		}
 	}
 }

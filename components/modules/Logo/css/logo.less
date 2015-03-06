@@ -2,10 +2,30 @@
 	display: block;
 	height: 2*@gap;
 	.box-sizing(content-box);
-	padding: @gap @gap;
+	padding: 50px 20px;
 }
 
+@media screen and (orientation: landscape) {
+	.e-logo {
+		padding-top: 25px;
+	}
+}
+
+@media screen and (min-width: @bp-md-2) {
+	.e-logo {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+
 /* Portrait */
+@media screen and (min-width: @bp-xss-2) and (orientation: portrait) {
+	.e-logo {
+			height: 2.5 * @gap;
+	}
+}
+
 @media screen and (min-width: @bp-xs-min) and (orientation: portrait) {
 	.e-logo {
 		height: 3*@gap;
@@ -24,9 +44,15 @@
 	}
 }
 
-@media screen and (min-width: @bp-lg-min) and (orientation: portrait) {
+@media screen and (min-width: @bp-md-2) and (orientation: portrait) {
 	.e-logo {
 		height: 6*@gap;
+	}
+}
+
+@media screen and (min-width: @bp-xl-min) and (orientation: portrait) {
+	.e-logo {
+		height: 8*@gap;
 	}
 }
 
@@ -45,6 +71,13 @@
 
 @media screen and (min-width: @bp-lg-min) and (orientation: landscape) {
 	.e-logo {
-		height: 6*@gap;
+		height: 5*@gap;
+		padding-top: 40px;
+	}
+}
+
+@media screen and (min-width: @bp-xl-2) and (orientation: landscape) {
+	.e-logo {
+		height: 7*@gap;
 	}
 }

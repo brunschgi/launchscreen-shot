@@ -10,19 +10,26 @@ String.prototype.capitalize = function() {
 };
 
 hbs.registerPartials(cfg.micro.base_path + '/' + cfg.micro.view_partials_directory);
-hbs.registerHelper('component', function(modName) {
-    var fullModPath = path.join(
+hbs.registerHelper('component', function(modName, variant) {
+    var filename = path.join(
         cfg.micro.base_path,
         cfg.micro.components.module.path,
-        '/',
         modName.capitalize(),
-        '/',
         modName.toLowerCase() + '.' + cfg.micro.view_file_extension
     );
 
+    if ('string' === typeof variant) {
+        filename = path.join(
+            cfg.micro.base_path,
+            cfg.micro.components.module.path,
+            modName.capitalize(),
+            modName.toLowerCase() + '-' +  variant.toLowerCase() + '.' + cfg.micro.view_file_extension
+        );
+    }
+
     return new hbs.handlebars.SafeString(
         hbs.handlebars.compile(
-            fs.readFileSync(fullModPath, 'utf8')
+            fs.readFileSync(filename, 'utf8')
         ).call()
     );
 });

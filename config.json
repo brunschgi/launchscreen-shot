@@ -5,36 +5,83 @@
   },
   "shots": [
     {
-      "url": "http://127.0.0.1:3000/launch",
+      "url": {
+        "en": "http://127.0.0.1:3000/launch"
+      },
       "options": {
         "quality": 100,
         "phantomPath": "/usr/bin/phantomjs"
       },
       "files": [
         {
-          "name": "320x480",
+          "name": "android-320x480",
           "width": 320,
           "height": 480
         },
         {
-          "name": "480x800",
+          "name": "android-480x800",
           "width": 480,
           "height": 800
         },
         {
-          "name": "480x854",
+          "name": "android-480x854",
           "width": 480,
           "height": 854
         },
         {
-          "name": "540x960",
+          "name": "android-540x960",
           "width": 540,
           "height": 960
         },
         {
-          "name": "800x1280",
+          "name": "android-720x1280",
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "name": "android-800x1280",
           "width": 800,
           "height": 1280
+        },
+        {
+          "name": "android-1080x1920",
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "name": "android-1200x1920",
+          "width": 1200,
+          "height": 1920
+        },
+        {
+          "name": "iphone-4-4s",
+          "width": 640,
+          "height": 960
+        },
+        {
+          "name": "iphone-5-5s",
+          "width": 640,
+          "height": 1136
+        },
+        {
+          "name": "iphone-6",
+          "width": 750,
+          "height": 1334
+        },
+        {
+          "name": "iphone-6-plus",
+          "width": 1242,
+          "height": 2208
+        },
+        {
+          "name": "ipad-1x",
+          "width": 768,
+          "height": 1024
+        },
+        {
+          "name": "ipad-2x",
+          "width": 1536,
+          "height": 2048
         }
       ]
     }

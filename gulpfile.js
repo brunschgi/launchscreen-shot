@@ -81,13 +81,16 @@ gulp.task('webshot', function() {
 
 			var options = merge(portrait, shot.options);
 
-			webshot(shot.url, './shots/' + file.name + '.png', options, function(err) {
-				if(err) {
-					console.error(err);
+			for(var id in shot.url) {
+				if(shot.url.hasOwnProperty(id)) {
+					webshot(shot.url[id], './shots/' + file.name + '.png', options, function(err) {
+						if(err) {
+							console.error(err);
+						}
+						// screenshot now saved
+					});
 				}
-				// screenshot now saved
-			});
-
+			}
 
 			// landscape mode
 			var landscape = {
@@ -103,12 +106,16 @@ gulp.task('webshot', function() {
 
 			var options = merge(landscape, shot.options);
 
-			webshot(shot.url, './shots/' + file.name + '-landscape.png', options, function(err) {
-				if(err) {
-					console.error(err);
+			for(var id in shot.url) {
+				if(shot.url.hasOwnProperty(id)) {
+					webshot(shot.url[id], './shots/' + file.name + '-landscape.png', options, function(err) {
+						if(err) {
+							console.error(err);
+						}
+						// screenshot now saved
+					});
 				}
-				// screenshot now saved
-			});
+			}
 		}
 	}
 });
